@@ -117,11 +117,11 @@ analyze_environment() {
 
 install_kernel() {
     if [[ "$environment_headers" != "true" ]]; then
-        [ ! -f "linux-headers-5.4.0-rc6_5.4.0-rc6-2_amd64.deb" ] && wget --no-check-certificate -O linux-headers-5.4.0-rc6_5.4.0-rc6-2_amd64.deb "https://github.com/yeyingorg/bbr2.sh/raw/master/linux-headers-5.4.0-rc6_5.4.0-rc6-2_amd64.deb"
+        [ ! -f "linux-headers-5.4.0-rc6_5.4.0-rc6-2_amd64.deb" ] && wget --no-check-certificate -O linux-headers-5.4.0-rc6_5.4.0-rc6-2_amd64.deb "https://github.com/veip007/bbr2.sh/raw/master/linux-headers-5.4.0-rc6_5.4.0-rc6-2_amd64.deb"
         [ ! -f "linux-headers-5.4.0-rc6_5.4.0-rc6-2_amd64.deb" ] && echo "Error! Download file failed! File \"linux-headers-5.4.0-rc6_5.4.0-rc6-2_amd64.deb\" Not Found!" && echo "錯誤！下載文件失敗！找不到文件 \"linux-headers-5.4.0-rc6_5.4.0-rc6-2_amd64.deb\"" && exit 1
     fi
     if [[ "$environment_image" != "true" ]]; then
-        [ ! -f "linux-image-5.4.0-rc6_5.4.0-rc6-2_amd64.deb" ] && wget --no-check-certificate -O linux-image-5.4.0-rc6_5.4.0-rc6-2_amd64.deb "https://github.com/yeyingorg/bbr2.sh/raw/master/linux-image-5.4.0-rc6_5.4.0-rc6-2_amd64.deb"
+        [ ! -f "linux-image-5.4.0-rc6_5.4.0-rc6-2_amd64.deb" ] && wget --no-check-certificate -O linux-image-5.4.0-rc6_5.4.0-rc6-2_amd64.deb "https://github.com/veip007/bbr2.sh/raw/master/linux-image-5.4.0-rc6_5.4.0-rc6-2_amd64.deb"
         [ ! -f "linux-image-5.4.0-rc6_5.4.0-rc6-2_amd64.deb" ] && echo "Error! Download file failed! File \"linux-image-5.4.0-rc6_5.4.0-rc6-2_amd64.deb\" Not Found!" && echo "錯誤！下載文件失敗！找不到文件 \"linux-image-5.4.0-rc6_5.4.0-rc6-2_amd64.deb\"" && exit 1
     fi
     [[ "$environment_headers" != "true" ]] && dpkg -i linux-headers-5.4.0-rc6_5.4.0-rc6-2_amd64.deb
