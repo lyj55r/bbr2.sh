@@ -16,13 +16,13 @@ Installation success rate 100%
 
 General usage:
 一般用法:
-wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/raw/master/bbr2.sh" && chmod +x bbr2.sh && bash bbr2.sh
+wget --no-check-certificate -q -O bbr2.sh "https://github.com/veip007/bbr2.sh/raw/master/bbr2.sh" && chmod +x bbr2.sh && bash bbr2.sh
 
 Since it can be called a one-click installation script, of course, there must be...
 既然称得上是一键安装脚本，当然要有......
 True one-click installation:
 真·一键安装:
-wget --no-check-certificate -q -O bbr2.sh "https://github.com/yeyingorg/bbr2.sh/raw/master/bbr2.sh" && chmod +x bbr2.sh && bash bbr2.sh auto
+wget --no-check-certificate -q -O bbr2.sh "https://github.com/veip007/bbr2.sh/raw/master/bbr2.sh" && chmod +x bbr2.sh && bash bbr2.sh auto
 
 Automatically restart after installing the kernel, automatically install BBR2 and enable ECN after restart .
 安装内核后自动重启，重启后自动安装BBR2和开启ECN。
